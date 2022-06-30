@@ -1,0 +1,69 @@
+/*
+Catherine D.
+WEB-210-0001
+Lesson 7 Assignment
+*/
+
+* {
+margin: 0;
+padding: 0;
+}
+
+header, nav {
+	background-color: #ace1af; /* celadon */
+	text-align: center;
+}
+
+h1 {
+	font-family: Garamond;
+	font-style: italic;
+	color: #006400; /* dark green */
+	font-size: 5em;
+	
+}
+
+nav {
+	font-size: 2.25em;
+}
+
+nav a {
+	padding: 1em;
+	text-decoration: none;
+		color: #006400;
+}
+
+footer {
+	background-color: #a0785a; /* chamoisee */
+	font-family: Garamond;
+	color: #2c1608; /* zinnwaldite brown */
+	text-align: center;
+}
+
+footer h2 {
+	font-size: 2.5em;
+	font-style: italic;
+	text-decoration: none;
+}
+
+footer a {
+	font-size: 1.25em;
+	padding: 1em;
+	text-decoration: none;
+	color: #2c1608;
+}
+
+img {
+	padding: 15px;
+}
+
+@supports (grid-area: auto) {
+	
+	.mainArea >  * {
+	display: grid;
+	grid-template-columns: 5% 2fr 1fr 5%;
+	grid-column-gap: 12px;
+	background-color: #faebd7; /* antique white */
+	justify-items: left;
+	}
+
+}
